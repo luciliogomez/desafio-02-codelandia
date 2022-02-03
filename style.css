@@ -1,0 +1,290 @@
+/*Variáveis*/
+:root {
+  --bgSite: #f6f6f6;
+  --bgCard: #ebe9ea;
+  
+  --white: #fff;
+
+  --title: #181818;
+  --text: #474747;
+}
+
+/*Reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  background-color: var(--bgSite);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+button,
+input {
+  border: 0;
+}
+button:focus,
+input:focus {
+  border: 0;
+}
+
+
+.container{
+  width: 100%;
+  padding: 10px 20px;
+}
+
+.top{
+  background-color: var(--title);
+  color: var(--white);
+  padding: 20px 30px;
+}
+.top h3{
+  font-size: 1em;
+  text-align: center;
+  font-weight: 400;
+}
+
+
+
+header {
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+header .logo h4{
+  font-size: 1.4em;
+  color: var(--title);
+  
+}
+
+.banner{
+  background-image: url(img/wallpaper.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 400px;
+
+}
+.banner .description{
+  height: 400px;
+  width: 100%;
+  background-color: rgba(0,0,0,0.7);
+
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.banner .description h4,
+.banner .description p{
+  color: var(--white);
+} 
+.banner .description h4{
+  font-weight: bolder;
+  font-size: 1.8em;
+  /* text-align: center; */
+  margin-bottom: 3%;
+}
+
+.banner .description p{
+  font-weight: 500;
+  font-size: 1.1em;
+  /* text-align: center; */
+}
+
+.destaques .sobre{
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.destaques .sobre{
+  margin-bottom: 10%;
+}
+.destaques .sobre h3{
+  font-size: 1.8em;
+  color: var(--title);
+  margin-bottom: 4%;
+}
+.destaques .sobre p{
+  text-align: center;
+  color: var(--title);
+  font-size: 1.1em;
+}
+
+.destaques .artigos{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+.destaques .artigos .tenis{
+  background-color: var(--bgCard);
+  margin-bottom: 10%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;  
+  width: 100%;
+  cursor: pointer;
+}
+
+.destaques .artigos .tenis img{
+  width: 70%;
+}
+
+footer{
+  background-color: var(--title);
+  color: white;
+  padding: 40px 40px;
+}
+footer p{
+  text-align: center;
+}
+
+
+
+.tenis:hover img{
+  transform: scale(1.3);   
+  transition: 1s all ease; 
+}
+
+
+
+@media only screen and (min-width: 700px)
+{
+.top h3{
+  font-size: 1em;
+  text-align: center;
+  padding: 10px;
+}
+
+.destaques .artigos{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+
+
+}
+
+
+.destaques .artigos .tenis{    
+  width: 48%;
+  margin-bottom: 4%;
+}
+
+.banner{
+  min-height: 400px;
+
+}
+.banner .description{
+  height: 400px;
+}
+
+.banner .description p{
+  width: 50%;
+  font-size: 0.9em;
+}
+
+.destaques .sobre{
+  margin-bottom: 5%;
+}
+.destaques .sobre h3{
+  font-size: 1.8em;
+  margin-bottom: 2%;
+}
+.destaques .sobre p{
+  font-size: 1em;
+}
+
+.container{
+  padding: 10px 50px !important;
+}
+
+footer{
+  padding: 20px;
+}
+footer p{
+  font-size: 1.2em;
+}
+
+}
+
+
+
+@media only screen and (min-width: 1024px)
+{
+
+
+
+  .container{
+    padding: 10px 80px !important;
+  }
+  
+  .destaques .artigos .tenis{    
+    width: 22%;
+    margin-bottom: 4%;
+    height: 200px;
+  }
+
+.banner .description{
+  height: 450px;
+}
+
+.banner .description h4{
+  font-size: 1.8em;
+  margin-bottom: 2%;
+}
+
+.banner .description p{
+  font-size: 1.2em;
+}
+
+.destaques .sobre{
+  margin-bottom: 2%;
+}
+
+.destaques .sobre h3{
+  font-size: 2em !important;
+}
+
+}

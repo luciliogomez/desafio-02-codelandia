@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JordanShoes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="top container">
+        <h3>Ganhe R$ 10,00 de desconto no frete</h3>
+    </div>
+    <header class="container">
+        <div class="logo">
+            <h4>Jordan Shoes</h4>
+        </div>
+    </header>
+    <section class="banner ">
+        
+        <div class="description container">
+            <h4>A melhor loja de Jordan</h4>
+            <div id="typed-strings">
+                <p>O tênis Jordan é fruto de uma velha e forte parceria
+                    entre  Nike e o jogador Michael Jordan.</p>
+            </div>
+            <p id="typed"></p>
+        </div>
+    </section>
+
+    <section class="destaques container">
+        <div class="sobre">
+            <h3>Destaques</h3>
+            <p>Frete gratis e chinelo de brinde é aqui, aproveite por tempo limitado.</p>
+        </div>
+
+        <div class="artigos">
+            <div class="tenis">
+                <img src="img/1.png" alt="">
+            </div>
+            <div class="tenis">
+                <img src="img/2.png" alt="">
+            </div>
+            <div class="tenis">
+                <img src="img/3.png" alt="">
+            </div>
+            <div class="tenis">
+                <img src="img/4.png" alt="">
+            </div>
+            <div class="tenis">
+                <img src="img/5.png" alt="">
+            </div>
+            <div class="tenis">
+                <img src="img/6.png" alt="">
+            </div>
+            <div class="tenis">
+                <img src="img/7.png" alt="">
+            </div>
+            <div class="tenis">
+                <img src="img/8.png" alt="">
+            </div>
+            
+        </div>
+    </section>
+
+    <footer class="">
+        <p>Todos os direitos reservados.</p>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed('#typed', {
+            stringsElement: '#typed-strings',
+            startDelay: 1600,
+            typeSpeed: 30,
+            showCursor: true,
+        });
+    </script>
+    
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        const sr = ScrollReveal({
+            origin: 'bottom',
+            distance: '50px',
+            duration: 1500,
+            reset: false
+        });
+
+        ScrollReveal().reveal('.sobre', { delay: 200 });
+        ScrollReveal().reveal('.artigos', { delay: 300 });
+        ScrollReveal().reveal('.tenis', { delay: 300 });
+        
+    </script>
+
+</body>
+</html>
